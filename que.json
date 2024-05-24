@@ -1,0 +1,111 @@
+[{
+    "questionNumber": 1,
+    "question": "What is the capital of France?",
+    "options": [
+      "Paris",
+      "London",
+      "Berlin",
+      "Madrid"
+    ],
+    "correctAnswer": "Paris"
+  },
+  {
+    "questionNumber": 2,
+    "question": "Which planet is known as the \"Red Planet\"?",
+    "options": [
+      "Mars",
+      "Venus",
+      "Jupiter",
+      "Saturn"
+    ],
+    "correctAnswer": "Mars"
+  },
+  {
+    "questionNumber": 3,
+    "question": "Who wrote the novel \"Pride and Prejudice\"?",
+    "options": [
+      "Jane Austen",
+      "Charlotte Bronte",
+      "Emily Bronte",
+      "Charles Dickens"
+    ],
+    "correctAnswer": "Jane Austen"
+  },
+  {
+    "questionNumber": 4,
+    "question": "What is the smallest planet in our solar system?",
+    "options": [
+      "Mercury",
+      "Venus",
+      "Earth",
+      "Mars"
+    ],
+    "correctAnswer": "Mercury"
+  },
+  {
+    "questionNumber": 5,
+    "question": "What is the chemical symbol for gold?",
+    "options": [
+      "Au",
+      "Ag",
+      "Cu",
+      "Fe"
+    ],
+    "correctAnswer": "Au"
+  },
+  {
+    "questionNumber": 6,
+    "question": "Who painted the famous artwork \"The Starry Night\"?",
+    "options": [
+      "Vincent van Gogh",
+      "Pablo Picasso",
+      "Leonardo da Vinci",
+      "Michelangelo"
+    ],
+    "correctAnswer": "Vincent van Gogh"
+  },
+  {
+    "questionNumber": 7,
+    "question": "What is the largest ocean on Earth?",
+    "options": [
+      "Pacific Ocean",
+      "Atlantic Ocean",
+      "Indian Ocean",
+      "Arctic Ocean"
+    ],
+    "correctAnswer": "Pacific Ocean"
+  },
+  {
+    "questionNumber": 8,
+    "question": "What is the rarest blood type?",
+    "options": [
+      "AB Negative",
+      "O Positive",
+      "A Positive",
+      "B Negative"
+    ],
+    "correctAnswer": "AB Negative"
+  },
+  {
+    "questionNumber": 9,
+    "question": "Which animal is known as the \"Ship of the Desert\"?",
+    "options": [
+      "Camel",
+      "Elephant",
+      "Giraffe",
+      "Zebra"
+    ],
+    "correctAnswer": "Camel"
+  },
+  {
+    "questionNumber": 10,
+    "question": "What is the currency used in Japan?",
+    "options": [
+      "Yen",
+      "Dollar",
+      "Euro",
+      "Pound"
+    ],
+    "correctAnswer": "Yen"
+  }
+]
