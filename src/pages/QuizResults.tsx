@@ -16,7 +16,7 @@ export default function quizResults() {
     //     if(doc.id == user_id){
     //     // doc.data() is never undefined for query doc snapshots
     //     setQuizResults(doc.data() as any)
-    //     const quizData = doc.data().quizData
+    //     const quizData = doc.data().quizData/home/lokesh/Desktop/Quizgrad-dev/src/pages/quizrule/quizrule.css
     //     const lastQuiz = quizData[quizData.length - 1];
     //     // const quizScore = lastQuiz.score;
     //     // setScore(quizScore)
