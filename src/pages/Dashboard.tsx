@@ -1,4 +1,3 @@
-import React from "react";
 import CategoryCard from "../components/CategoryCard";
 import UserProfile from "../components/UserProfile";
 
