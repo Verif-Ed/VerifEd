@@ -6,6 +6,7 @@ import toast from "react-hot-toast";
 function CreateQuiz() {
   const [fileName, setFileName] = useState("");
   const [excelData, setExcelData] = useState(null);
+  console.log("excelData", excelData);
 
   // User authentication state
   useEffect(() => {

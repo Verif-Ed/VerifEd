@@ -1,30 +1,31 @@
 import { Link } from "react-router-dom";
-import CategoryCard from "./CategoryCard";
-import UserProfile from "./UserProfile";
 
-const options: object = {
-  weekday: "long",
-  year: "numeric",
-  month: "long",
-  day: "numeric",
-};
+// const options: object = {
+//   weekday: "long",
+//   year: "numeric",
+//   month: "long",
+//   day: "numeric",
+// };
 
-const convertDateToMonthAndYear = (
-  formatType: string,
-  date: string | undefined
-) => {
-  if (typeof date === "string") {
-    const dateFormat = new Date(date);
-    return dateFormat.toLocaleDateString("en-US", options);
-  }
-  return "undefined date found";
-};
+// const convertDateToMonthAndYear = (
+//   formatType: string,
+//   date: string | undefined
+// ) => {
+//   if (typeof date === "string") {
+//     const dateFormat = new Date(date);
+//     return dateFormat.toLocaleDateString("en-US", options);
+//   }
+//   return "undefined date found";
+// };
 
 type quizParamType = {
   quizid: string | undefined;
 };
 
 const QuizDetails = ({ quizid }: quizParamType) => {
+  const quiz = quizid;
+  console.log(quiz);
+
   return (
     <div className="card card-side  bg-base-100 shadow-xl ">
       <figure className="">

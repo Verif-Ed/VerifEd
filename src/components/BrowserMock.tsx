@@ -1,5 +1,3 @@
-import React from "react";
-
 const BrowserMock = () => {
   return (
     <div className="mockup-browser border bg-base-300">

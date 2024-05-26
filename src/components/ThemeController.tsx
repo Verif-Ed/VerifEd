@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import useThemeStore from "../store/themeStore";
 const ThemeController = () => {
   const { theme, toggleTheme } = useThemeStore();
