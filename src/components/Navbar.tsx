@@ -47,7 +47,7 @@ const Navbar = () => {
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
               <li>
-                <a href="./Dashboard">Dashboard</a>
+                <a href="./">Dashboard</a>
               </li>
 
               <li>
@@ -60,7 +60,7 @@ const Navbar = () => {
           </div>
           <div className="navbar-end">
             {/* <a className="btn bg-blue-800">Connect Wallet</a> */}
-            <ConnectButton className="bg-blue-950"/>
+            <ConnectButton label="Connect Wallet" className="w-[100%]"/>
           </div>
         </div>
       </div>

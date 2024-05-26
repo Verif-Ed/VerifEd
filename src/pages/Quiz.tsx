@@ -44,7 +44,7 @@ function Quiz() {
   //   const quizName : any = SearchParams.get('name')
   //   const course : any = SearchParams.get('course')
   //   const courseCode : any = SearchParams.get('coursecode')
-  const quizTime = 10; // 5 minutes in seconds
+  const quizTime = 1200; // 5 minutes in seconds
   const [user, setUser] = useState(null); // User authentication state
   const [questions, setQuestions] = useState<QuizQuestion[]>([]); // Provide type annotation for questions
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
