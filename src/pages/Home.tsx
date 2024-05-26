@@ -1,4 +1,4 @@
-import BrowserMock from "../components/BrowserMock";
+// import BrowserMock from "../components/BrowserMock";
 
 const Home = () => {
   return (
@@ -25,9 +25,9 @@ const Home = () => {
             <button className="btn btn-primary">Get Started</button>
           </div>
         </div>
-        <div className="right-3">
+        {/* <div className="right-3">
           <BrowserMock />
-        </div>
+        </div> */}
       </div>
     </div>
   );
