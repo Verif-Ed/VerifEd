@@ -1,7 +1,26 @@
-import { ConnectButton } from "@suiet/wallet-kit";
+import {
+  ConnectButton,
+  WalletContextState,
+  useWallet,
+} from "@suiet/wallet-kit";
+
 import "@suiet/wallet-kit/style.css";
 import ThemeController from "./ThemeController";
+import { useEffect } from "react";
+import usewalletStore from "../store/walletStore";
 const Navbar = () => {
+  const { setWalletConnected } = usewalletStore();
+  const wallet = useWallet();
+  useEffect(() => {
+    if (wallet.connected) {
+      //  isWalletConnected= true;
+      setWalletConnected(true);
+      console.log("connected");
+    } else {
+      setWalletConnected(false);
+      console.log("disconnected");
+    }
+  }, [wallet]);
   return (
     <div className="flex justify-center items- mt-2 fixed z-50 w-full ">
       <div className="border rounded-3xl  shadow-md shadow-gray-300 w-[85%] bg-base-200 ">
@@ -64,7 +83,19 @@ const Navbar = () => {
           </div>
           <div className="navbar-end">
             {/* <a className="btn bg-blue-800">Connect Wallet</a> */}
-            <ConnectButton label="Connect Wallet" className="w-[100%]" />
+            <ConnectButton
+              label="Connect Wallet"
+              className="w-[100%]"
+              onConnectError={(wallet) => {
+                console.log(wallet);
+              }}
+              onConnectSuccess={() => {
+                console.log("connected");
+              }}
+              onDisconnectSuccess={() => {
+                console.log("disconnected");
+              }}
+            />
           </div>
         </div>
       </div>
