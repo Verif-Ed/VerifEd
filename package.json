@@ -20,7 +20,8 @@
     "react-router-dom": "^6.23.1",
     "uuid": "^9.0.1",
     "uuidv4": "^6.2.13",
-    "xlsx": "^0.18.5"
+    "xlsx": "^0.18.5",
+    "zustand": "^4.5.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

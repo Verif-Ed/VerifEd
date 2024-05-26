@@ -1,9 +1,10 @@
 import { ConnectButton } from "@suiet/wallet-kit";
 import "@suiet/wallet-kit/style.css";
+import ThemeController from "./ThemeController";
 const Navbar = () => {
   return (
-    <div className="flex justify-center items- mt-2">
-      <div className="border rounded-3xl border-gray-300 shadow-md shadow-gray-300 w-[90%] ">
+    <div className="flex justify-center items- mt-2 fixed z-50 w-full ">
+      <div className="border rounded-3xl  shadow-md shadow-gray-300 w-[85%] bg-base-200 ">
         <div className="navbar  rounded-3xl ">
           <div className="navbar-start">
             <div className="dropdown">
@@ -42,7 +43,10 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
-            <a className="btn btn-ghost text-xl">VerifEd</a>
+            <a className=" font-bold ml-2 text-xl">
+              <span className="text-gray-700">Verif</span>
+              <span className="text-accent">Ed</span>
+            </a>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
@@ -60,9 +64,12 @@ const Navbar = () => {
           </div>
           <div className="navbar-end">
             {/* <a className="btn bg-blue-800">Connect Wallet</a> */}
-            <ConnectButton label="Connect Wallet" className="w-[100%]"/>
+            <ConnectButton label="Connect Wallet" className="w-[100%]" />
           </div>
         </div>
+      </div>
+      <div className="border rounded-3xl  shadow-md shadow-gray-300 flex ml-2 px-2 py-1 bg-base-200">
+        <ThemeController />
       </div>
     </div>
   );
