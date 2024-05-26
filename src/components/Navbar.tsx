@@ -1,13 +1,10 @@
-import {
-  ConnectButton,
-  WalletContextState,
-  useWallet,
-} from "@suiet/wallet-kit";
+import { ConnectButton, useWallet } from "@suiet/wallet-kit";
 
 import "@suiet/wallet-kit/style.css";
 import ThemeController from "./ThemeController";
 import { useEffect } from "react";
 import usewalletStore from "../store/walletStore";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const { setWalletConnected } = usewalletStore();
   const wallet = useWallet();
@@ -52,32 +49,33 @@ const Navbar = () => {
                 className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
               >
                 <li>
-                  <a>Dashboard</a>
+                  <Link to="/dashboard">Dashboard</Link>
+                  {/* <a>Dashboard</a> */}
                 </li>
                 <li>
-                  <a>LeaderBoard</a>
+                  <Link to="/leaderboard">LeaderBoard</Link>
                 </li>
                 <li>
-                  <a>About</a>
+                  <Link to="/about">About</Link>
                 </li>
               </ul>
             </div>
-            <a className=" font-bold ml-2 text-xl">
+            <Link className=" font-bold ml-2 text-xl" to={"/"}>
               <span className="text-gray-700">Verif</span>
               <span className="text-accent">Ed</span>
-            </a>
+            </Link>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
               <li>
-                <a href="./">Dashboard</a>
+                <Link to="/dashboard">Dashboard</Link>
               </li>
 
               <li>
-                <a href="./">LeaderBoard</a>
+                <Link to="/leaderboard">LeaderBoard</Link>
               </li>
               <li>
-                <a href="./">About</a>
+                <Link to="/about">About</Link>
               </li>
             </ul>
           </div>
@@ -85,7 +83,7 @@ const Navbar = () => {
             {/* <a className="btn bg-blue-800">Connect Wallet</a> */}
             <ConnectButton
               label="Connect Wallet"
-              className="w-[100%]"
+              className="w-[100%] bg-primary"
               onConnectError={(wallet) => {
                 console.log(wallet);
               }}

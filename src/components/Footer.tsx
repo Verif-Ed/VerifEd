@@ -14,7 +14,9 @@ const Footer = () => {
             blockchain.
           </p>
           <div className="">
-            <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+            <p>
+              Copyright © 2024 - All right reserved by VeriEd Solutions Ltd.
+            </p>
           </div>
         </aside>
         <nav>

@@ -3,8 +3,8 @@ import UserProfile from "../components/UserProfile";
 
 const Dashboard = () => {
   return (
-    <div className="flex h-screen w-screen flex-col">
-      <div className="flex justify-center items-center mt-9">
+    <div className=" flex h-screen w-screen flex-col">
+      <div className="flex justify-center items-center mt-9 h-full">
         <div className="w-4/5">
           <UserProfile />
         </div>
