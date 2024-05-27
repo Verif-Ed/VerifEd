@@ -2,6 +2,7 @@
 // import { ConnectModal, WalletKitProvider } from "@mysten/wallet-kit";
 import { ConnectModal, useWallet } from "@suiet/wallet-kit";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 const Home = () => {
   const [open, setOpen] = useState(false);
   const wallet = useWallet();
@@ -38,7 +39,9 @@ const Home = () => {
             </p>
             {wallet.connected ? (
               <>
-                <button className="btn btn-primary">Explore</button>
+                <button className="btn btn-primary">
+                  <Link to={"/dashboard"}>Explore</Link>
+                </button>
               </>
             ) : (
               <button
