@@ -1,8 +1,22 @@
 // import BrowserMock from "../components/BrowserMock";
-
+// import { ConnectModal, WalletKitProvider } from "@mysten/wallet-kit";
+import { ConnectModal, useWallet } from "@suiet/wallet-kit";
+import { useState } from "react";
 const Home = () => {
+  const [open, setOpen] = useState(false);
+  const wallet = useWallet();
   return (
+    // <WalletKitProvider>
     <div>
+      <ConnectModal
+        open={open}
+        onOpenChange={() => {
+          setOpen(false);
+        }}
+        onConnectSuccess={() => {
+          setOpen(false);
+        }}
+      />
       <div
         className="hero min-h-screen"
         // style={{
@@ -22,7 +36,20 @@ const Home = () => {
               excepturi exercitationem quasi. In deleniti eaque aut repudiandae
               et a id nisi.
             </p>
-            <button className="btn btn-primary">Get Started</button>
+            {wallet.connected ? (
+              <>
+                <button className="btn btn-primary">Explore</button>
+              </>
+            ) : (
+              <button
+                className="btn btn-primary"
+                onClick={() => {
+                  setOpen(true);
+                }}
+              >
+                Get Started
+              </button>
+            )}
           </div>
         </div>
         {/* <div className="right-3">
@@ -30,6 +57,7 @@ const Home = () => {
         </div> */}
       </div>
     </div>
+    // </WalletKitProvider>
   );
 };
 
