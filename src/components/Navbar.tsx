@@ -107,7 +107,7 @@ const onSuccess = () => {
               action="wallet-connect" // obtained from the Developer Portal
               onSuccess={onSuccess} // callback when the modal is closed
               handleVerify={handleVerify} // callback when the proof is received
-              verification_level={VerificationLevel.Orb}
+              verification_level={VerificationLevel.Device}
               
             >
               {({ open }) => 
