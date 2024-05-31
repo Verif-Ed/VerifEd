@@ -41,7 +41,7 @@ const QuizDetails = ({ quizid }: quizParamType) => {
       </div>
       <div className="flex items-end ">
         <button className="btn mr-3 mb-2">
-          <Link to={"/quiz"}>Start Quiz</Link>
+          <Link to={`/quiz/${quizid}/start`}>Start Quiz</Link>
         </button>
       </div>
     </div>

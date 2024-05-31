@@ -1,12 +1,16 @@
+import { useParams } from "react-router-dom";
 import QuizDetails from "../components/QuizDetails";
 import "../components/quizrule.css";
 const QuizbyId = () => {
+  const { id } = useParams();
+  console.log(id, "this is search params");
+
   return (
     <>
       <div className="flex h-screen w-screen flex-col">
         <div className="flex justify-center items-center mt-9">
           <div className="w-4/5">
-            <QuizDetails quizid="234" />
+            <QuizDetails quizid={id} />
           </div>
         </div>
         <section className="flex flex-col gap-1  justify-center items-center mt-4">

@@ -7,7 +7,7 @@ const CategoryCard = () => {
       <div className="card-body">
         <h2 className="card-title"> Featured Categories</h2>
         <div className="ui-card-default py-1  category-grid shadow-md flex items-end justify-end">
-          <Link to={`/quizrule`}>
+          <Link to={`/quiz/sui`}>
             <div className="flex relative ">
               <img
                 className="w-full "
@@ -23,7 +23,7 @@ const CategoryCard = () => {
               </div>
             </div>
           </Link>
-          <Link to={`/quizrule`}>
+          <Link to={`/quiz/move`}>
             <div className="flex relative ">
               <img
                 className="w-full "
