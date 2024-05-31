@@ -2,6 +2,8 @@ import { useState, useEffect, useRef } from "react";
 
 import toast from "react-hot-toast";
 import data from "../../move_que.json";
+import sui_que from "../../sui_que.json";
+import { useParams } from "react-router-dom";
 
 function formatDateTime(date: any) {
   var hours = date.getHours();
@@ -40,6 +42,8 @@ type QuizQuestion = {
 };
 
 function Quiz() {
+  const { id } = useParams();
+
   //   const quizId : any = SearchParams.get('id')
   //   const quizName : any = SearchParams.get('name')
   //   const course : any = SearchParams.get('course')
@@ -57,7 +61,12 @@ function Quiz() {
   const quizTimeRef = useRef(quizTime);
   const timeLeftRef = useRef(timeLeft); // This can be updated to allow for custom quiz times
   useEffect(() => {
-    setQuestions(data);
+    if (id === "sui") {
+      setQuestions(sui_que);
+    } else {
+      setQuestions(data);
+    }
+    // setQuestions(data);
   }, []);
   //   console.log(questions, "this is data");
 
