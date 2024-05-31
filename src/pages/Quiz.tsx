@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 
 import toast from "react-hot-toast";
-import data from "../../que.json";
+import data from "../../move_que.json";
 
 function formatDateTime(date: any) {
   var hours = date.getHours();

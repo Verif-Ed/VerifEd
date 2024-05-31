@@ -1,0 +1,483 @@
+[
+    {
+      "questionNumber": 1,
+      "question": "What is the Move programming language primarily designed for?",
+      "options": [
+        "Web development",
+        "Smart contracts",
+        "Artificial Intelligence",
+        "Game development"
+      ],
+      "correctAnswer": "Smart contracts",
+      "difficulty": "Easy"
+    },
+    {
+      "questionNumber": 2,
+      "question": "Which company developed the Move programming language?",
+      "options": [
+        "Facebook (Meta)",
+        "Google",
+        "Amazon",
+        "Apple"
+      ],
+      "correctAnswer": "Facebook (Meta)",
+      "difficulty": "Easy"
+    },
+    {
+      "questionNumber": 3,
+      "question": "What is a unique feature of the Move language in terms of asset management?",
+      "options": [
+        "Linear types",
+        "Garbage collection",
+        "Automatic memory management",
+        "Reference counting"
+      ],
+      "correctAnswer": "Linear types",
+      "difficulty": "Medium"
+    },
+    {
+      "questionNumber": 4,
+      "question": "Which blockchain uses the Move programming language?",
+      "options": [
+        "Ethereum",
+        "Bitcoin",
+        "Sui",
+        "Polkadot"
+      ],
+      "correctAnswer": "Sui",
+      "difficulty": "Easy"
+    },
+    {
+      "questionNumber": 5,
+      "question": "How does Move ensure the safety of digital assets?",
+      "options": [
+        "Through type safety",
+        "By using cryptographic hashes",
+        "With multi-signature wallets",
+        "Using consensus algorithms"
+      ],
+      "correctAnswer": "Through type safety",
+      "difficulty": "Medium"
+    },
+    {
+      "questionNumber": 6,
+      "question": "What is the primary benefit of Move's resource-oriented programming model?",
+      "options": [
+        "Improved readability",
+        "Enhanced security",
+        "Faster execution",
+        "Reduced gas fees"
+      ],
+      "correctAnswer": "Enhanced security",
+      "difficulty": "Hard"
+    },
+    {
+      "questionNumber": 7,
+      "question": "In Move, what is a 'resource'?",
+      "options": [
+        "A reusable code library",
+        "A type that represents a scarce asset",
+        "A memory management technique",
+        "A smart contract template"
+      ],
+      "correctAnswer": "A type that represents a scarce asset",
+      "difficulty": "Medium"
+    },
+    {
+      "questionNumber": 8,
+      "question": "How does Move handle concurrency?",
+      "options": [
+        "Through parallel processing",
+        "By avoiding shared mutable state",
+        "With thread pools",
+        "Using async/await"
+      ],
+      "correctAnswer": "By avoiding shared mutable state",
+      "difficulty": "Hard"
+    },
+    {
+      "questionNumber": 9,
+      "question": "What is the purpose of the 'move' keyword in the Move language?",
+      "options": [
+        "To transfer ownership of a resource",
+        "To declare a variable",
+        "To create a function",
+        "To import a module"
+      ],
+      "correctAnswer": "To transfer ownership of a resource",
+      "difficulty": "Medium"
+    },
+    {
+      "questionNumber": 10,
+      "question": "Which of the following is a key principle of Move's design?",
+      "options": [
+        "Object-oriented programming",
+        "Functional programming",
+        "Resource safety",
+        "Dynamic typing"
+      ],
+      "correctAnswer": "Resource safety",
+      "difficulty": "Easy"
+    },
+    {
+      "questionNumber": 11,
+      "question": "How are resources created in Move?",
+      "options": [
+        "Using the 'new' keyword",
+        "Using a special constructor",
+        "Through modules",
+        "By calling a built-in function"
+      ],
+      "correctAnswer": "Through modules",
+      "difficulty": "Medium"
+    },
+    {
+      "questionNumber": 12,
+      "question": "What happens if a resource is not used or moved in Move?",
+      "options": [
+        "It is automatically deleted",
+        "It causes a compile-time error",
+        "It is garbage collected",
+        "It remains in memory"
+      ],
+      "correctAnswer": "It causes a compile-time error",
+      "difficulty": "Hard"
+    },
+    {
+      "questionNumber": 13,
+      "question": "What is the main use of modules in Move?",
+      "options": [
+        "To organize code into namespaces",
+        "To handle concurrency",
+        "To perform I/O operations",
+        "To create and manage resources"
+      ],
+      "correctAnswer": "To create and manage resources",
+      "difficulty": "Medium"
+    },
+    {
+      "questionNumber": 14,
+      "question": "Which feature of Move helps in preventing double-spending of assets?",
+      "options": [
+        "Linear types",
+        "Concurrency control",
+        "Digital signatures",
+        "Hash functions"
+      ],
+      "correctAnswer": "Linear types",
+      "difficulty": "Hard"
+    },
+    {
+      "questionNumber": 15,
+      "question": "How are Move transactions executed?",
+      "options": [
+        "Sequentially",
+        "In parallel",
+        "Asynchronously",
+        "Randomly"
+      ],
+      "correctAnswer": "Sequentially",
+      "difficulty": "Easy"
+    },
+    {
+      "questionNumber": 16,
+      "question": "What ensures the atomicity of transactions in Move?",
+      "options": [
+        "Smart contract design",
+        "The Move virtual machine",
+        "Blockchain consensus",
+        "Transaction scripts"
+      ],
+      "correctAnswer": "Transaction scripts",
+      "difficulty": "Medium"
+    },
+    {
+      "questionNumber": 17,
+      "question": "What is the role of the Move virtual machine?",
+      "options": [
+        "To compile Move code",
+        "To execute Move bytecode",
+        "To manage blockchain nodes",
+        "To handle network communication"
+      ],
+      "correctAnswer": "To execute Move bytecode",
+      "difficulty": "Easy"
+    },
+    {
+      "questionNumber": 18,
+      "question": "In Move, what is the significance of the 'copy' keyword?",
+      "options": [
+        "To create a new instance of a resource",
+        "To clone a resource",
+        "To create an immutable reference",
+        "To transfer ownership of a resource"
+      ],
+      "correctAnswer": "To clone a resource",
+      "difficulty": "Hard"
+    },
+    {
+      "questionNumber": 19,
+      "question": "What type of language is Move?",
+      "options": [
+        "Statically typed",
+        "Dynamically typed",
+        "Weakly typed",
+        "Untyped"
+      ],
+      "correctAnswer": "Statically typed",
+      "difficulty": "Easy"
+    },
+    {
+      "questionNumber": 20,
+      "question": "Which keyword is used to define a resource in Move?",
+      "options": [
+        "struct",
+        "resource",
+        "type",
+        "asset"
+      ],
+      "correctAnswer": "struct",
+      "difficulty": "Medium"
+    },
+    {
+      "questionNumber": 21,
+      "question": "How does Move handle errors?",
+      "options": [
+        "Exceptions",
+        "Error codes",
+        "Option and Result types",
+        "Panic and recover"
+      ],
+      "correctAnswer": "Option and Result types",
+      "difficulty": "Hard"
+    },
+    {
+      "questionNumber": 22,
+      "question": "What is the primary benefit of Move’s type system?",
+      "options": [
+        "Ease of use",
+        "Flexibility",
+        "Safety and security",
+        "Performance"
+      ],
+      "correctAnswer": "Safety and security",
+      "difficulty": "Medium"
+    },
+    {
+      "questionNumber": 23,
+      "question": "Which feature of Move ensures that resources cannot be duplicated?",
+      "options": [
+        "Type safety",
+        "Resource types",
+        "Ownership model",
+        "Immutable references"
+      ],
+      "correctAnswer": "Ownership model",
+      "difficulty": "Hard"
+    },
+    {
+      "questionNumber": 24,
+      "question": "What is a Move script?",
+      "options": [
+        "A reusable code library",
+        "A transaction template",
+        "A set of instructions for executing a transaction",
+        "A tool for compiling Move code"
+      ],
+      "correctAnswer": "A set of instructions for executing a transaction",
+      "difficulty": "Medium"
+    },
+    {
+      "questionNumber": 25,
+      "question": "In Move, what is a 'module'?",
+      "options": [
+        "A single line of code",
+        "A collection of scripts",
+        "A smart contract component",
+        "A unit of code that can define resources, functions, and constants"
+      ],
+      "correctAnswer": "A unit of code that can define resources, functions, and constants",
+      "difficulty": "Easy"
+    },
+    {
+      "questionNumber": 26,
+      "question": "How are Move modules published?",
+      "options": [
+        "As bytecode on the blockchain",
+        "As source code on GitHub",
+        "As compiled binaries",
+        "As Docker containers"
+      ],
+      "correctAnswer": "As bytecode on the blockchain",
+      "difficulty": "Medium"
+    },
+    {
+      "questionNumber": 27,
+      "question": "Which concept in Move helps manage access control?",
+      "options": [
+        "Public and private functions",
+        "Roles and permissions",
+        "Ownership and borrowing",
+        "Accounts and keys"
+      ],
+      "correctAnswer": "Ownership and borrowing",
+      "difficulty": "Hard"
+    },
+    {
+      "questionNumber": 28,
+      "question": "What is the Move Prover?",
+      "options": [
+        "A tool for compiling Move code",
+        "A formal verification tool for Move programs",
+        "A runtime environment for Move scripts",
+        "A debugger for Move applications"
+      ],
+      "correctAnswer": "A formal verification tool for Move programs",
+      "difficulty": "Medium"
+    },
+    {
+      "questionNumber": 29,
+      "question": "In Move, what is a 'struct' used for?",
+      "options": [
+        "To define a function",
+        "To create a module",
+        "To define a resource or value type",
+        "To write a script"
+      ],
+      "correctAnswer": "To define a resource or value type",
+      "difficulty": "Easy"
+    },
+    {
+      "questionNumber": 30,
+      "question": "What is an advantage of Move's resource-oriented programming?",
+      "options": [
+        "Improved performance",
+        "Simplified syntax",
+        "Ensured asset safety",
+        "Better concurrency"
+      ],
+      "correctAnswer": "Ensured asset safety",
+      "difficulty": "Medium"
+    },
+    {
+      "questionNumber": 31,
+      "question": "How does Move prevent unauthorized access to resources?",
+      "options": [
+        "Access control lists",
+        "Role-based access control",
+        "Capability-based security",
+        "Public and private keys"
+      ],
+      "correctAnswer": "Capability-based security",
+      "difficulty": "Hard"
+    },
+    {
+      "questionNumber": 32,
+      "question": "Which command is used to build a Move project?",
+      "options": [
+        "move build",
+        "cargo build",
+        "npm build",
+        "compile move"
+      ],
+      "correctAnswer": "move build",
+      "difficulty": "Easy"
+    },
+    {
+      "questionNumber": 33,
+      "question": "What does the 'assert' keyword do in Move?",
+      "options": [
+        "Checks a condition at compile-time",
+        "Throws an error if a condition is false at runtime",
+        "Logs a message if a condition is true",
+        "Terminates the program if a condition is false"
+      ],
+      "correctAnswer": "Throws an error if a condition is false at runtime",
+      "difficulty": "Medium"
+    },
+    {
+      "questionNumber": 34,
+      "question": "How are immutable references indicated in Move?",
+      "options": [
+        "By using the 'let' keyword",
+        "By using the '&' symbol",
+        "By using the 'const' keyword",
+        "By using the '@' symbol"
+      ],
+      "correctAnswer": "By using the '&' symbol",
+      "difficulty": "Hard"
+    },
+    {
+      "questionNumber": 35,
+      "question": "What is the significance of the 'drop' function in Move?",
+      "options": [
+        "To delete a variable",
+        "To remove a resource from memory",
+        "To transfer ownership of a resource",
+        "To release a borrowed reference"
+      ],
+      "correctAnswer": "To transfer ownership of a resource",
+      "difficulty": "Medium"
+    },
+    {
+      "questionNumber": 36,
+      "question": "Which of the following is a valid way to declare a variable in Move?",
+      "options": [
+        "var x: u64",
+        "let x: u64",
+        "int x",
+        "u64 x"
+      ],
+      "correctAnswer": "let x: u64",
+      "difficulty": "Easy"
+    },
+    {
+      "questionNumber": 37,
+      "question": "What is the purpose of the 'module' keyword in Move?",
+      "options": [
+        "To declare a new type",
+        "To define a reusable unit of code",
+        "To import an external library",
+        "To create a new transaction script"
+      ],
+      "correctAnswer": "To define a reusable unit of code",
+      "difficulty": "Medium"
+    },
+    {
+      "questionNumber": 38,
+      "question": "Which statement about Move's type system is true?",
+      "options": [
+        "It is dynamically typed",
+        "It does not support generics",
+        "It enforces strict ownership rules",
+        "It allows implicit type conversion"
+      ],
+      "correctAnswer": "It enforces strict ownership rules",
+      "difficulty": "Hard"
+    },
+    {
+      "questionNumber": 39,
+      "question": "What does 'let x = y;' do in Move?",
+      "options": [
+        "Declares a mutable variable x and initializes it with y",
+        "Declares an immutable variable x and initializes it with y",
+        "Transfers ownership of y to x",
+        "Creates a reference to y"
+      ],
+      "correctAnswer": "Declares an immutable variable x and initializes it with y",
+      "difficulty": "Medium"
+    },
+    {
+      "questionNumber": 40,
+      "question": "What is the primary design goal of the Move language?",
+      "options": [
+        "Simplicity",
+        "Performance",
+        "Security",
+        "Compatibility"
+      ],
+      "correctAnswer": "Security",
+      "difficulty": "Easy"
+    }
+  ]
+  

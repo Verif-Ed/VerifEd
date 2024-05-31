@@ -1,0 +1,483 @@
+[
+    {
+      "questionNumber": 1,
+      "question": "What is the primary purpose of the Sui blockchain?",
+      "options": [
+        "Decentralized finance",
+        "Supply chain management",
+        "Cloud storage",
+        "Gaming and NFTs"
+      ],
+      "correctAnswer": "Gaming and NFTs",
+      "difficulty": "Easy"
+    },
+    {
+      "questionNumber": 2,
+      "question": "Which consensus mechanism does the Sui blockchain use?",
+      "options": [
+        "Proof of Work",
+        "Proof of Stake",
+        "Delegated Proof of Stake",
+        "Proof of Authority"
+      ],
+      "correctAnswer": "Proof of Stake",
+      "difficulty": "Medium"
+    },
+    {
+      "questionNumber": 3,
+      "question": "Who developed the Sui blockchain?",
+      "options": [
+        "Mysten Labs",
+        "Ethereum Foundation",
+        "Cardano Foundation",
+        "Solana Labs"
+      ],
+      "correctAnswer": "Mysten Labs",
+      "difficulty": "Easy"
+    },
+    {
+      "questionNumber": 4,
+      "question": "In what programming language are smart contracts on the Sui blockchain written?",
+      "options": [
+        "Solidity",
+        "Rust",
+        "Move",
+        "Vyper"
+      ],
+      "correctAnswer": "Move",
+      "difficulty": "Medium"
+    },
+    {
+      "questionNumber": 5,
+      "question": "What is the native token of the Sui blockchain called?",
+      "options": [
+        "SUI",
+        "ETH",
+        "ADA",
+        "SOL"
+      ],
+      "correctAnswer": "SUI",
+      "difficulty": "Easy"
+    },
+    {
+      "questionNumber": 6,
+      "question": "Which of the following features is unique to the Sui blockchain?",
+      "options": [
+        "Sharding",
+        "Parallel transaction execution",
+        "Layer 2 scaling",
+        "Proof of History"
+      ],
+      "correctAnswer": "Parallel transaction execution",
+      "difficulty": "Hard"
+    },
+    {
+      "questionNumber": 7,
+      "question": "What type of consensus algorithm does Sui use to achieve high throughput?",
+      "options": [
+        "Byzantine Fault Tolerance",
+        "Nakamoto Consensus",
+        "Raft",
+        "HotStuff"
+      ],
+      "correctAnswer": "Byzantine Fault Tolerance",
+      "difficulty": "Medium"
+    },
+    {
+      "questionNumber": 8,
+      "question": "Which component of the Sui blockchain ensures transaction finality?",
+      "options": [
+        "Validators",
+        "Light Clients",
+        "Smart Contracts",
+        "State Sync"
+      ],
+      "correctAnswer": "Validators",
+      "difficulty": "Easy"
+    },
+    {
+      "questionNumber": 9,
+      "question": "How does Sui achieve scalability?",
+      "options": [
+        "Vertical scaling",
+        "Off-chain transactions",
+        "Layer 2 solutions",
+        "Horizontal scaling"
+      ],
+      "correctAnswer": "Horizontal scaling",
+      "difficulty": "Hard"
+    },
+    {
+      "questionNumber": 10,
+      "question": "What is the role of gas fees in the Sui blockchain?",
+      "options": [
+        "To incentivize miners",
+        "To prevent spam",
+        "To support dApp development",
+        "To store data"
+      ],
+      "correctAnswer": "To prevent spam",
+      "difficulty": "Medium"
+    },
+    {
+      "questionNumber": 11,
+      "question": "Which cryptographic algorithm does Sui use for transaction signatures?",
+      "options": [
+        "ECDSA",
+        "RSA",
+        "Schnorr",
+        "BLS"
+      ],
+      "correctAnswer": "ECDSA",
+      "difficulty": "Medium"
+    },
+    {
+      "questionNumber": 12,
+      "question": "What makes the Move programming language suitable for Sui?",
+      "options": [
+        "Easy syntax",
+        "High performance",
+        "Security features",
+        "Scalability"
+      ],
+      "correctAnswer": "Security features",
+      "difficulty": "Hard"
+    },
+    {
+      "questionNumber": 13,
+      "question": "What is a key advantage of Sui’s object-centric model?",
+      "options": [
+        "Improved privacy",
+        "Lower transaction fees",
+        "Faster transaction speeds",
+        "Better scalability"
+      ],
+      "correctAnswer": "Faster transaction speeds",
+      "difficulty": "Medium"
+    },
+    {
+      "questionNumber": 14,
+      "question": "How does Sui ensure data availability?",
+      "options": [
+        "Decentralized storage",
+        "Replicated databases",
+        "IPFS integration",
+        "Data sharding"
+      ],
+      "correctAnswer": "Decentralized storage",
+      "difficulty": "Hard"
+    },
+    {
+      "questionNumber": 15,
+      "question": "Which layer of the Sui architecture handles smart contract execution?",
+      "options": [
+        "Application layer",
+        "Consensus layer",
+        "Execution layer",
+        "Network layer"
+      ],
+      "correctAnswer": "Execution layer",
+      "difficulty": "Medium"
+    },
+    {
+      "questionNumber": 16,
+      "question": "How does Sui handle transaction ordering?",
+      "options": [
+        "First come, first served",
+        "Deterministic ordering",
+        "Parallel execution",
+        "Random selection"
+      ],
+      "correctAnswer": "Parallel execution",
+      "difficulty": "Hard"
+    },
+    {
+      "questionNumber": 17,
+      "question": "What is the main purpose of validators in the Sui network?",
+      "options": [
+        "To mine new blocks",
+        "To validate transactions",
+        "To execute smart contracts",
+        "To provide oracles"
+      ],
+      "correctAnswer": "To validate transactions",
+      "difficulty": "Easy"
+    },
+    {
+      "questionNumber": 18,
+      "question": "Which consensus mechanism is combined with Proof of Stake in Sui?",
+      "options": [
+        "HotStuff",
+        "Raft",
+        "Tendermint",
+        "PBFT"
+      ],
+      "correctAnswer": "HotStuff",
+      "difficulty": "Medium"
+    },
+    {
+      "questionNumber": 19,
+      "question": "What is an advantage of Sui’s parallel transaction execution?",
+      "options": [
+        "Increased security",
+        "Reduced energy consumption",
+        "Higher throughput",
+        "Lower costs"
+      ],
+      "correctAnswer": "Higher throughput",
+      "difficulty": "Easy"
+    },
+    {
+      "questionNumber": 20,
+      "question": "Which type of applications is Sui particularly optimized for?",
+      "options": [
+        "Financial applications",
+        "Social media platforms",
+        "Decentralized exchanges",
+        "Gaming and NFTs"
+      ],
+      "correctAnswer": "Gaming and NFTs",
+      "difficulty": "Easy"
+    },
+    {
+      "questionNumber": 21,
+      "question": "How does the Sui blockchain handle forks?",
+      "options": [
+        "Uses long-range attacks",
+        "Employs checkpointing",
+        "Forks are not possible",
+        "Relies on user consensus"
+      ],
+      "correctAnswer": "Employs checkpointing",
+      "difficulty": "Hard"
+    },
+    {
+      "questionNumber": 22,
+      "question": "What is a major security feature of the Move language?",
+      "options": [
+        "Memory safety",
+        "Syntax simplicity",
+        "Asynchronous execution",
+        "Automatic sharding"
+      ],
+      "correctAnswer": "Memory safety",
+      "difficulty": "Medium"
+    },
+    {
+      "questionNumber": 23,
+      "question": "Which layer ensures communication between nodes in Sui?",
+      "options": [
+        "Application layer",
+        "Network layer",
+        "Consensus layer",
+        "Data layer"
+      ],
+      "correctAnswer": "Network layer",
+      "difficulty": "Easy"
+    },
+    {
+      "questionNumber": 24,
+      "question": "How does Sui improve upon traditional blockchain scalability?",
+      "options": [
+        "By using larger blocks",
+        "By reducing block size",
+        "By parallel processing",
+        "By using sidechains"
+      ],
+      "correctAnswer": "By parallel processing",
+      "difficulty": "Hard"
+    },
+    {
+      "questionNumber": 25,
+      "question": "What is the function of the SUI token?",
+      "options": [
+        "Governance",
+        "Transaction fees",
+        "Staking",
+        "All of the above"
+      ],
+      "correctAnswer": "All of the above",
+      "difficulty": "Easy"
+    },
+    {
+      "questionNumber": 26,
+      "question": "What distinguishes Sui from other blockchains in terms of transaction handling?",
+      "options": [
+        "Sequential execution",
+        "Parallel execution",
+        "Higher gas fees",
+        "Lower decentralization"
+      ],
+      "correctAnswer": "Parallel execution",
+      "difficulty": "Medium"
+    },
+    {
+      "questionNumber": 27,
+      "question": "How does the Sui blockchain ensure fairness in transaction processing?",
+      "options": [
+        "First-come, first-served",
+        "Auction-based fees",
+        "Round-robin scheduling",
+        "Fair queuing"
+      ],
+      "correctAnswer": "Fair queuing",
+      "difficulty": "Hard"
+    },
+    {
+      "questionNumber": 28,
+      "question": "What is the role of validators in the Sui blockchain consensus process?",
+      "options": [
+        "To generate new tokens",
+        "To validate and process transactions",
+        "To store the blockchain state",
+        "To monitor network activity"
+      ],
+      "correctAnswer": "To validate and process transactions",
+      "difficulty": "Medium"
+    },
+    {
+      "questionNumber": 29,
+      "question": "Which feature of Sui helps prevent double-spending attacks?",
+      "options": [
+        "Smart contracts",
+        "Consensus mechanism",
+        "Object-centric data model",
+        "Validator checkpoints"
+      ],
+      "correctAnswer": "Object-centric data model",
+      "difficulty": "Hard"
+    },
+    {
+      "questionNumber": 30,
+      "question": "What is the significance of gas fees on the Sui blockchain?",
+      "options": [
+        "Incentivize validators",
+        "Reduce spam transactions",
+        "Fund development",
+        "All of the above"
+      ],
+      "correctAnswer": "All of the above",
+      "difficulty": "Easy"
+    },
+    {
+      "questionNumber": 31,
+      "question": "What is a unique aspect of Sui’s consensus mechanism compared to traditional blockchains?",
+      "options": [
+        "Leader-based consensus",
+        "Parallel processing of transactions",
+        "Higher gas fees",
+        "Use of sidechains"
+      ],
+      "correctAnswer": "Parallel processing of transactions",
+      "difficulty": "Medium"
+    },
+    {
+      "questionNumber": 32,
+      "question": "How does Sui achieve high throughput?",
+      "options": [
+        "By increasing block size",
+        "Through sharding",
+        "By using parallel transaction execution",
+        "By reducing node count"
+      ],
+      "correctAnswer": "By using parallel transaction execution",
+      "difficulty": "Hard"
+    },
+    {
+      "questionNumber": 33,
+      "question": "Which layer in the Sui blockchain architecture deals with data storage?",
+      "options": [
+        "Consensus layer",
+        "Execution layer",
+        "Application layer",
+        "Data layer"
+      ],
+      "correctAnswer": "Data layer",
+      "difficulty": "Easy"
+    },
+    {
+      "questionNumber": 34,
+      "question": "What aspect of Sui’s architecture allows for the execution of multiple transactions simultaneously?",
+      "options": [
+        "Sharding",
+        "Layer 2 solutions",
+        "Parallel execution engine",
+        "Cross-chain compatibility"
+      ],
+      "correctAnswer": "Parallel execution engine",
+      "difficulty": "Hard"
+    },
+    {
+      "questionNumber": 35,
+      "question": "Which consensus algorithm is primarily used in Sui?",
+      "options": [
+        "Proof of Work",
+        "Proof of Stake",
+        "HotStuff",
+        "PBFT"
+      ],
+      "correctAnswer": "HotStuff",
+      "difficulty": "Medium"
+    },
+    {
+      "questionNumber": 36,
+      "question": "How does Sui ensure low latency in transaction processing?",
+      "options": [
+        "Large block size",
+        "Validator consensus",
+        "Parallel transaction execution",
+        "Higher gas fees"
+      ],
+      "correctAnswer": "Parallel transaction execution",
+      "difficulty": "Hard"
+    },
+    {
+      "questionNumber": 37,
+      "question": "What is the main advantage of the Move programming language used in Sui?",
+      "options": [
+        "High performance",
+        "Safety and security",
+        "Ease of use",
+        "Widespread adoption"
+      ],
+      "correctAnswer": "Safety and security",
+      "difficulty": "Medium"
+    },
+    {
+      "questionNumber": 38,
+      "question": "How does Sui manage the state of its blockchain?",
+      "options": [
+        "Using a global state machine",
+        "Through state sharding",
+        "With an object-centric data model",
+        "Using off-chain storage"
+      ],
+      "correctAnswer": "With an object-centric data model",
+      "difficulty": "Hard"
+    },
+    {
+      "questionNumber": 39,
+      "question": "What is the primary use case targeted by the Sui blockchain?",
+      "options": [
+        "Decentralized finance",
+        "Enterprise solutions",
+        "Internet of Things",
+        "Gaming and NFTs"
+      ],
+      "correctAnswer": "Gaming and NFTs",
+      "difficulty": "Easy"
+    },
+    {
+      "questionNumber": 40,
+      "question": "What distinguishes Sui's transaction model from traditional blockchains?",
+      "options": [
+        "Sequential transaction processing",
+        "Account-based model",
+        "Parallel transaction execution",
+        "Fixed gas fees"
+      ],
+      "correctAnswer": "Parallel transaction execution",
+      "difficulty": "Medium"
+    }
+  ]
+  

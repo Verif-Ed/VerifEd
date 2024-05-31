@@ -1,6 +1,10 @@
 import { ConnectButton, useWallet } from "@suiet/wallet-kit";
 // 'use client' // for Next.js app router
-import { IDKitWidget, VerificationLevel, ISuccessResult } from '@worldcoin/idkit'
+import {
+  IDKitWidget,
+  VerificationLevel,
+  ISuccessResult,
+} from "@worldcoin/idkit";
 
 import "@suiet/wallet-kit/style.css";
 import ThemeController from "./ThemeController";
@@ -21,22 +25,23 @@ const Navbar = () => {
     }
   }, [wallet]);
   const handleVerify = async (proof: ISuccessResult) => {
-    const res = await fetch("/api/verify", { // route to your backend will depend on implementation
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify(proof),
-    })
+    const res = await fetch("/api/verify", {
+      // route to your backend will depend on implementation
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(proof),
+    });
     if (!res.ok) {
-        throw new Error("Verification failed."); // IDKit will display the error message to the user in the modal
+      throw new Error("Verification failed."); // IDKit will display the error message to the user in the modal
     }
-};
-const onSuccess = () => {
-  // This is where you should perform any actions after the modal is closed
-  // Such as redirecting the user to a new page
-  window.location.href = "/dashboard";
-};
+  };
+  const onSuccess = () => {
+    // This is where you should perform any actions after the modal is closed
+    // Such as redirecting the user to a new page
+    window.location.href = "/dashboard";
+  };
 
   return (
     <div className="flex justify-center items- mt-2 fixed z-50 w-full ">
@@ -108,13 +113,16 @@ const onSuccess = () => {
               onSuccess={onSuccess} // callback when the modal is closed
               handleVerify={handleVerify} // callback when the proof is received
               verification_level={VerificationLevel.Device}
-              
             >
-              {({ open }) => 
+              {({ open }) => (
                 // This is the button that will open the IDKit modal
-                <button onClick={open} className="w-[35%] bg-primary rounded-xl">Verify with World ID</button>
-              }
-              
+                <button
+                  onClick={open}
+                  className="w-[35%] bg-primary rounded-xl"
+                >
+                  Verify with World ID
+                </button>
+              )}
             </IDKitWidget>
             <ConnectButton
               label="Connect Wallet"
@@ -140,9 +148,3 @@ const onSuccess = () => {
 };
 
 export default Navbar;
-
-
-
-
-
-

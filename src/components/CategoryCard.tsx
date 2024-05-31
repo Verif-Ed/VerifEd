@@ -1,11 +1,44 @@
+import { Link } from "react-router-dom";
+import suiIntro from "../../public/sui intro.webp";
+import moveIntro from "../../public/intro_move.webp";
 const CategoryCard = () => {
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
+    <div className="card w-auto bg-base-100 shadow-xl">
       <div className="card-body">
-        <h2 className="card-title">Card title!</h2>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
-        <div className="card-actions justify-end">
-          <button className="btn btn-primary">Buy Now</button>
+        <h2 className="card-title"> Featured Categories</h2>
+        <div className="ui-card-default py-1  category-grid shadow-md flex items-end justify-end">
+          <Link to={`/quizrule`}>
+            <div className="flex relative ">
+              <img
+                className="w-full "
+                src={suiIntro}
+                alt={"dummy"}
+                loading="lazy"
+                height={230}
+                // width={430}
+              />
+
+              <div className="absolute right-3 top-2 text-white p-1  ">
+                <span>{"20"} MCQs</span>
+              </div>
+            </div>
+          </Link>
+          <Link to={`/quizrule`}>
+            <div className="flex relative ">
+              <img
+                className="w-full "
+                src={moveIntro}
+                alt={"dummy"}
+                loading="lazy"
+                height={230}
+                // width={430}
+              />
+
+              <div className="absolute right-3 top-2 text-white p-1  ">
+                <span>{"20"} MCQs</span>
+              </div>
+            </div>
+          </Link>
         </div>
       </div>
     </div>
