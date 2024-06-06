@@ -137,7 +137,7 @@ const Navbar = () => {
             <div className="">
               <ConnectButton
                 // className="text-white"
-                connectText={"hello"}
+                connectText={"Connect Wallet"}
                 style={{ backgroundColor: "" }}
               />
             </div>
