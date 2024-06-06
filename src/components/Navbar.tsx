@@ -25,7 +25,9 @@ const Navbar = () => {
     }
   }, [wallet]);
   const handleVerify = async (proof: ISuccessResult) => {
-    const res = await fetch("/api/verify", {
+    console.log("handling proof", proof);
+
+    const res = await fetch("http://localhost:3000/api/data", {
       // route to your backend will depend on implementation
       method: "POST",
       headers: {
@@ -40,6 +42,8 @@ const Navbar = () => {
   const onSuccess = () => {
     // This is where you should perform any actions after the modal is closed
     // Such as redirecting the user to a new page
+    console.log("success connected to worldcoin id");
+
     window.location.href = "/dashboard";
   };
 
