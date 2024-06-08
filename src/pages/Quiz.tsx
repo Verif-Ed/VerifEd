@@ -228,11 +228,11 @@ function Quiz() {
               </button>
             )}
             <div className=" bg-slate-600 text-white p-2 rounded-lg shadow-lg">
-              {!isTimeUp ? (
-                <span> Time Left: {timeLeft} seconds </span>
-              ) : (
-                <span> Time's Up</span>
-              )}
+            {!isTimeUp ? (
+      <span> Time Left: {Math.floor(timeLeft / 60)} minutes {timeLeft % 60} seconds </span>
+    ) : (
+      <span> Time's Up</span>
+    )}
             </div>
             {isFinalQuestion ? (
               <button
