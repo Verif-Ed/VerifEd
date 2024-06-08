@@ -1,11 +1,4 @@
-import {
-  ConnectButton,
-  useAccountBalance,
-  useWallet,
-  SuiChainId,
-  ErrorCode,
-  formatSUI,
-} from "@suiet/wallet-kit";
+import { useWallet, SuiChainId } from "@suiet/wallet-kit";
 import "@suiet/wallet-kit/style.css";
 import { TransactionBlock } from "@mysten/sui.js/transactions";
 import { useMemo } from "react";
@@ -23,17 +16,17 @@ const createLottoContractAddr = new Map([
 const SendSuiTx = () => {
   const wallet = useWallet();
   const { isWalletConnected } = usewalletStore();
-  const { balance } = useAccountBalance();
+  // const { balance } = useAccountBalance();
   const lottoContractAddr = useMemo(() => {
     if (!wallet.chain) return "";
     return createLottoContractAddr.get(wallet.chain.id) ?? "";
   }, [wallet]);
 
-  function uint8arrayToHex(value: Uint8Array | undefined) {
-    if (!value) return "";
-    // @ts-ignore
-    return value.toString("hex");
-  }
+  // function uint8arrayToHex(value: Uint8Array | undefined) {
+  //   if (!value) return "";
+  //   // @ts-ignore
+  //   return value.toString("hex");
+  // }
 
   async function handleExecuteMoveCall(target: string | undefined) {
     if (!target) return;
@@ -100,12 +93,17 @@ const SendSuiTx = () => {
   return (
     <>
       {lottoContractAddr && isWalletConnected && (
-        <button
-          className="btn"
-          onClick={() => handleExecuteMoveCall(lottoContractAddr)}
-        >
-          Create Lotto {chainName(wallet.chain?.id)}
-        </button>
+        <>
+          <button
+            className="btn"
+            onClick={() => handleExecuteMoveCall(lottoContractAddr)}
+          >
+            Create Lotto {chainName(wallet.chain?.id)}
+          </button>
+          <button className="btn" onClick={() => handleSignMsg()}>
+            Create msg {chainName(wallet.chain?.id)}
+          </button>
+        </>
       )}
     </>
   );
