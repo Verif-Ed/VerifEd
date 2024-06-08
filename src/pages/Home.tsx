@@ -1,6 +1,7 @@
 import { ConnectModal, useCurrentWallet } from "@mysten/dapp-kit";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import SendSuiTx from "../components/SendSuiTx";
 const Home = () => {
   const [open, setOpen] = useState(false);
   const { connectionStatus } = useCurrentWallet();
@@ -44,6 +45,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <SendSuiTx />
     </div>
   );
 };
