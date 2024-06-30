@@ -10,6 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@dfinity/agent": "^1.4.0",
+    "@dfinity/auth-client": "^1.4.0",
+    "@dfinity/candid": "^1.4.0",
+    "@dfinity/principal": "^1.4.0",
     "@mysten/dapp-kit": "^0.14.5",
     "@mysten/sui": "^1.0.5",
     "@mysten/sui.js": "^0.54.1",
@@ -29,6 +33,7 @@
     "uuid": "^9.0.1",
     "uuidv4": "^6.2.13",
     "xlsx": "^0.18.5",
+    "yarn": "^1.22.22",
     "zustand": "^4.5.2"
   },
   "devDependencies": {
