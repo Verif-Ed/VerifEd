@@ -4,6 +4,7 @@ import { ConnectModal, useWallet } from "@suiet/wallet-kit";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import SendSuiTx from "../components/SendSuiTx";
+// import VideoCapture from "../components/Proctoring/VideoCapture";
 const Home = () => {
   const [open, setOpen] = useState(false);
   const wallet = useWallet();
@@ -58,6 +59,8 @@ const Home = () => {
         </div>
       </div>
       <SendSuiTx />
+
+      {/* <VideoCapture /> */}
     </div>
     // </WalletKitProvider>
   );

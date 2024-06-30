@@ -108,7 +108,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <div className="navbar-end">
+          <div className="navbar-end ">
             {/* <a className="btn bg-blue-800">Connect Wallet</a> */}
 
             <IDKitWidget
@@ -122,7 +122,7 @@ const Navbar = () => {
                 // This is the button that will open the IDKit modal
                 <button
                   onClick={open}
-                  className="w-[35%] bg-primary rounded-xl"
+                  className="w-[35%] bg-primary rounded-xl btn"
                 >
                   Verify with World ID
                 </button>
