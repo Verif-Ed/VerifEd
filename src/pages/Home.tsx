@@ -1,32 +1,19 @@
-// import BrowserMock from "../components/BrowserMock";
-// import { ConnectModal, WalletKitProvider } from "@mysten/wallet-kit";
-import { ConnectModal, useWallet } from "@suiet/wallet-kit";
+import { ConnectModal, useCurrentWallet } from "@mysten/dapp-kit";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import SendSuiTx from "../components/SendSuiTx";
 // import VideoCapture from "../components/Proctoring/VideoCapture";
 const Home = () => {
   const [open, setOpen] = useState(false);
-  const wallet = useWallet();
+  const { connectionStatus } = useCurrentWallet();
   return (
-    // <WalletKitProvider>
     <div>
       <ConnectModal
+        trigger={""}
         open={open}
-        onOpenChange={() => {
-          setOpen(false);
-        }}
-        onConnectSuccess={() => {
-          setOpen(false);
-        }}
+        onOpenChange={(isOpen) => setOpen(isOpen)}
       />
-      <div
-        className="hero min-h-screen"
-        // style={{
-        //   backgroundImage:
-        //     "url(https://images.pexels.com/photos/1097456/pexels-photo-1097456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
-        // }}
-      >
+      <div className="hero min-h-screen">
         <div className=" "></div>
         <div className="hero-content text-center text-neutral-content ">
           <div className="max-w-md">
@@ -39,12 +26,13 @@ const Home = () => {
               excepturi exercitationem quasi. In deleniti eaque aut repudiandae
               et a id nisi.
             </p>
-            {wallet.connected ? (
-              <>
+
+            {connectionStatus === "connected" ? (
+              <div>
                 <button className="btn btn-primary">
                   <Link to={"/dashboard"}>Explore</Link>
                 </button>
-              </>
+              </div>
             ) : (
               <button
                 className="btn btn-primary"
@@ -62,7 +50,6 @@ const Home = () => {
 
       {/* <VideoCapture /> */}
     </div>
-    // </WalletKitProvider>
   );
 };
 
