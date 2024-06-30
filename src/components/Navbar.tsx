@@ -104,15 +104,37 @@ const Navbar = () => {
             </ul>
             <ThemeController />
           </div>
+<<<<<<< HEAD
           <div className="navbar-end">
+=======
+          <div className="navbar-end ">
+            {/* <a className="btn bg-blue-800">Connect Wallet</a> */}
+
+>>>>>>> f07559e29694dd1864d0b8745fa5686c264b1f29
             <IDKitWidget
               app_id="app_06dfaf6fb5f0b8ac58c10bf412238ffb"
               action="wallet-connect"
               onSuccess={onSuccess}
               handleVerify={handleVerify}
               verification_level={VerificationLevel.Device}
+<<<<<<< HEAD
             />
             <div>
+=======
+            >
+              {({ open }) => (
+                // This is the button that will open the IDKit modal
+                <button
+                  onClick={open}
+                  className="w-[35%] bg-primary rounded-xl btn"
+                >
+                  Verify with World ID
+                </button>
+              )}
+            </IDKitWidget>
+
+            <div className="">
+>>>>>>> f07559e29694dd1864d0b8745fa5686c264b1f29
               <ConnectButton
                 connectText={"Connect Wallet"}
                 style={{ backgroundColor: "" }}

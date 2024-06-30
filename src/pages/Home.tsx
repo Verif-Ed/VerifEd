@@ -3,8 +3,6 @@ import { useState } from "react";
 // import { Link } from "react-router-dom";
 import backimg from '../assets/back.jpeg';
 import SendSuiTx from "../components/SendSuiTx";
-// import Login from "./Login";
-import { useEffect } from "react";
 const Home = () => {
   const [open, setOpen] = useState(false);
   // const { connectionStatus } = useCurrentWallet();
@@ -54,6 +52,8 @@ const Home = () => {
         </div>
       </div>
       <SendSuiTx />
+
+      {/* <VideoCapture /> */}
     </div>
   );
 };
