@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import io from "socket.io-client";
 import * as faceMesh from "@mediapipe/face_mesh";
 import * as cam from "@mediapipe/camera_utils";
@@ -9,10 +9,12 @@ import {
   detectDepthVariation,
   detectHeadMovement,
 } from "../../utils/livenessDetector";
-
-const socket = io("http://localhost:3000");
+import SocketContext from "../../Context/SocketContext";
 
 const VideoCapture: React.FC = () => {
+  const { socket } = useContext(SocketContext);
+  console.log(socket, "this is socket");
+
   const videoRef = useRef<HTMLVideoElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const resultsRef = useRef<faceMesh.Results | null>(null);
@@ -115,7 +117,7 @@ const VideoCapture: React.FC = () => {
             : false;
 
           if (blinked || headMoved || hasDepth || hasNaturalTexture) {
-            console.log("Likely a real person");
+            // console.log("Likely a real person");
           } else {
             console.log("Possible photo detected");
             socket.emit("proctoring_alert", { type: "possible_photo" });
@@ -158,15 +160,20 @@ const VideoCapture: React.FC = () => {
 
   const promptUserAction = () => {
     const randomAction = Math.random() < 0.5 ? "blink" : "head_move";
-    alert(`Please : ${randomAction}`);
+    // alert(`Please : ${randomAction}`);
     socket.emit("proctoring_challenge", { action: randomAction });
     console.log(`Prompt user to: ${randomAction}`);
   };
 
   return (
-    <div>
+    <div className="">
       <video ref={videoRef} style={{ display: "none" }} />
-      <canvas ref={canvasRef} width="640" height="480" />
+      <canvas
+        ref={canvasRef}
+        width="100"
+        height="90"
+        className="rounded-full"
+      />
     </div>
   );
 };
