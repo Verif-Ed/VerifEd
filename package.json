@@ -10,15 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mediapipe/camera_utils": "^0.3.1675466862",
+    "@mediapipe/drawing_utils": "^0.3.1675466124",
+    "@mediapipe/face_mesh": "^0.4.1633559619",
     "@mysten/dapp-kit": "^0.14.5",
     "@mysten/sui": "^1.0.5",
     "@mysten/sui.js": "^0.54.1",
     "@mysten/wallet-kit": "^0.8.6",
     "@mysten/zklogin": "^0.7.4",
     "@suiet/wallet-kit": "^0.2.24",
-
     "@tanstack/react-query": "^5.40.1",
-
     "@worldcoin/idkit": "^1.2.0",
     "dotenv": "^16.4.5",
     "react": "^18.2.0",
@@ -26,6 +27,7 @@
     "react-dropzone": "^14.2.3",
     "react-hot-toast": "^2.4.1",
     "react-router-dom": "^6.23.1",
+    "socket.io-client": "^4.7.5",
     "uuid": "^9.0.1",
     "uuidv4": "^6.2.13",
     "xlsx": "^0.18.5",
