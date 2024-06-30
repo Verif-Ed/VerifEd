@@ -1,10 +1,24 @@
-import { ConnectModal, useCurrentWallet } from "@mysten/dapp-kit";
+import { ConnectModal, } from "@mysten/dapp-kit";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import backimg from '../assets/back.jpeg';
 import SendSuiTx from "../components/SendSuiTx";
+// import Login from "./Login";
+import { useEffect } from "react";
 const Home = () => {
   const [open, setOpen] = useState(false);
-  const { connectionStatus } = useCurrentWallet();
+  // const { connectionStatus } = useCurrentWallet();
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  // const handleLogin = () => {
+  //   setIsLoggedIn(true);
+  // };
+  useEffect(() => {
+    const savedPrincipal = localStorage.getItem('principal');
+    if (savedPrincipal) {
+      setIsLoggedIn(true);
+    }
+  }, []);
   return (
     <div>
       <ConnectModal
@@ -12,12 +26,17 @@ const Home = () => {
         open={open}
         onOpenChange={(isOpen) => setOpen(isOpen)}
       />
-      <div className="hero min-h-screen">
+      <div className="hero min-h-screen" style={{
+        backgroundImage: `url(${backimg})`,
+        backgroundPosition: 'center',
+        backgroundSize: 'conver',
+        filter: 'contrast(1.8)'
+      }}>
         <div className=" "></div>
         <div className="hero-content text-center text-neutral-content ">
           <div className="max-w-md">
             <h1 className="mb-5 text-5xl font-bold">
-              <span className="text-gray-700">Verif</span>
+              <span className="text-white-700">Verif</span>
               <span className="text-accent">Ed</span>
             </h1>
             <p className="mb-5">
@@ -26,22 +45,11 @@ const Home = () => {
               et a id nisi.
             </p>
 
-            {connectionStatus === "connected" ? (
-              <div>
-                <button className="btn btn-primary">
-                  <Link to={"/dashboard"}>Explore</Link>
-                </button>
-              </div>
-            ) : (
-              <button
-                className="btn btn-primary"
-                onClick={() => {
-                  setOpen(true);
-                }}
-              >
-                Get Started
-              </button>
-            )}
+            {
+              isLoggedIn && <p>Connected</p>
+            }
+
+            
           </div>
         </div>
       </div>
