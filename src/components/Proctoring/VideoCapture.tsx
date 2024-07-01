@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useRef } from "react";
-import io from "socket.io-client";
+// import io from "socket.io-client";
 import * as faceMesh from "@mediapipe/face_mesh";
 import * as cam from "@mediapipe/camera_utils";
 import * as drawingUtils from "@mediapipe/drawing_utils";

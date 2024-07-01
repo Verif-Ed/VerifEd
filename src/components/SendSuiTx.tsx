@@ -13,21 +13,21 @@ const createLottoContractAddr = new Map([
   // Add other networks if needed
 ]);
 
-let val = {
-  id: {
-    id: "0x2a8265103eb8cbe1e81fe54ff1f40099b02184532c01c4a303b1cc7ec5ed40fe",
-  },
-  table: {
-    fields: {
-      id: {
-        id: "0x543761706d09540b0fa5119659c68b460a95ac8949768f34edb3accddb378425",
-      },
-      size: "0",
-    },
-    type: "0x2::table::Table<u64, 0xa2fc1b66ce0666be1dfba897a01f2f1b271b850ac7a9cb8046ecaa7ea488a7b3::verif_ed::Test>",
-  },
-  test_count: "0",
-};
+// let val = {
+//   id: {
+//     id: "0x2a8265103eb8cbe1e81fe54ff1f40099b02184532c01c4a303b1cc7ec5ed40fe",
+//   },
+//   table: {
+//     fields: {
+//       id: {
+//         id: "0x543761706d09540b0fa5119659c68b460a95ac8949768f34edb3accddb378425",
+//       },
+//       size: "0",
+//     },
+//     type: "0x2::table::Table<u64, 0xa2fc1b66ce0666be1dfba897a01f2f1b271b850ac7a9cb8046ecaa7ea488a7b3::verif_ed::Test>",
+//   },
+//   test_count: "0",
+// };
 
 const SendSuiTx = () => {
   const wallet = useWallet();

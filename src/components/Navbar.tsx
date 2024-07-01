@@ -1,7 +1,7 @@
 // import { ConnectButton, useWallet } from "@suiet/wallet-kit";
 import { ConnectButton, useCurrentWallet } from "@mysten/dapp-kit";
 // 'use client' // for Next.js app router
-import PlugConnect from '@psychedelic/plug-connect';
+// import PlugConnect from '@psychedelic/plug-connect';
 import {
   IDKitWidget,
   VerificationLevel,
