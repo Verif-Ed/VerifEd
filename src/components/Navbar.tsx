@@ -1,6 +1,7 @@
 // import { ConnectButton, useWallet } from "@suiet/wallet-kit";
 import { ConnectButton, useCurrentWallet } from "@mysten/dapp-kit";
 // 'use client' // for Next.js app router
+import PlugConnect from '@psychedelic/plug-connect';
 import {
   IDKitWidget,
   VerificationLevel,
@@ -133,6 +134,10 @@ const Navbar = () => {
                 </button>
               )}
             </IDKitWidget>
+            {/* <PlugConnect
+  // whitelist={['canister-id']}
+  onConnectCallback={() => console.log("Some callback")}
+/> */}
 
             <div className="">
               <ConnectButton
